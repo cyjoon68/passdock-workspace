@@ -1,0 +1,8 @@
+[submodule "passdock-fe"]
+	path = passdock-fe
+	url = https://github.com/passdock-labs/passdock-fe.git
+	branch = develop
+[submodule "passdock-be"]
+	path = passdock-be
+	url = https://github.com/passdock-labs/passdock-be.git
+	branch = develop
