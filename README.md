@@ -20,4 +20,5 @@ docker compose up --build
 - Passkey risk monitoring: login event ingest, risk rules, alert status.
 - Frontend: Next.js App Router, React Compiler, TypeScript, ky.
 - Backend: Kotlin, Spring Boot MVC, PostgreSQL schema, Kafka dependency, Prometheus endpoint.
+- Observability: Prometheus scrape config and Grafana service.
 - CI: FE lint/build, BE Gradle test.
