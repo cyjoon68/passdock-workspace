@@ -1,7 +1,7 @@
 # PassDock
 
 ## Role Fit
-- Frontend: TypeScript, React, Next.js App Router, pnpm, ky, Cypress E2E
+- Frontend: TypeScript, Vue 3 Composition API, Nuxt, pnpm, ky, Cypress E2E
 - Backend: Kotlin, Spring Boot MVC, PostgreSQL, Kafka dependency, Prometheus registry
 - Infra: Docker Compose with Kafka, Prometheus, Grafana, GitHub Actions, GHCR
 - Git Flow: develop default, main retained, policy workflow for branch and PR title rules
