@@ -1,12 +1,17 @@
-# passdock-workspace
+# PassDock
 
-Root workspace for PassDock. Child repos are managed as git submodules.
+PassDock is a Passkey authentication risk monitoring service for collecting login events, evaluating risk rules, and tracking alert handling.
 
 ```text
 passdock-workspace/
   passdock-fe/
   passdock-be/
 ```
+
+## Services
+
+- `passdock-fe`: operations dashboard for login failures, risk rules, and alerts.
+- `passdock-be`: login event ingestion, risk evaluation, and alert API.
 
 ## Run
 
@@ -15,11 +20,16 @@ git submodule update --init --recursive
 docker compose up --build
 ```
 
-## Resume evidence
+## Core Flow
 
-- Passkey risk monitoring: login event ingest, risk rules, alert status.
-- Risk evaluator bottleneck fix: if-chain replaced with a rule-name strategy map; see `docs/risk-evaluator-refactor.md`.
-- Frontend: Next.js App Router, React Compiler, TypeScript, ky.
-- Backend: Kotlin, Spring Boot MVC, PostgreSQL schema, Kafka dependency, Prometheus endpoint.
-- Observability: Prometheus scrape config and Grafana service.
-- CI: FE lint/build, BE Gradle test.
+- Ingest Passkey login events.
+- Evaluate enabled risk rules.
+- Create risk alerts.
+- Track alert status and incident notes.
+- Export metrics through Spring Actuator Prometheus.
+
+## Operations
+
+- Risk rules use a rule-name evaluator map.
+- Prometheus and Grafana are included in local observability.
+- Docker Compose starts the local service stack.
