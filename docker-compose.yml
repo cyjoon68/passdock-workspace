@@ -44,7 +44,7 @@ services:
   fe:
     build: ./passdock-fe
     environment:
-      NEXT_PUBLIC_API_URL: http://localhost:8081/api
+      NUXT_PUBLIC_API_URL: http://localhost:8081/api
     ports:
       - "3001:3000"
     depends_on:
